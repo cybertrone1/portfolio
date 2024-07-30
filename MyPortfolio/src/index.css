@@ -1,0 +1,442 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* .playwrite-hr-<uniquifier> {
+  font-family: "Playwrite HR", cursive;
+  font-family: "Montserrat", sans-serif;
+
+} */
+
+/* default styling */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 0.5px solid #77E4C8;
+}
+.navbar h1 span{
+  color: #77E4C8;
+  margin: 0 0 0 10px;
+}
+.navbar h2{
+  margin: 0 10px 0 0;
+}
+.navbar .links a{
+  margin: 0 10px;
+}
+.navbar .links a:hover{
+  color: #77E4C8;
+}
+
+/* sub - content */
+
+.home-content{
+  width: 100%;
+}
+.home-content .intro{
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #77E4C8;
+  padding: 10px 0 20px 0;
+}
+.intro .p{
+  text-align: center;
+  font-size: 16px;
+  font-family: "Playwrite HR", cursive;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.intro .sub-intro{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.sub-intro .intro-display{
+  flex-basis: 70px;
+  border: 2px solid #77E4C8;
+  padding: 10px;
+  height: 170px;
+  margin: 0 auto;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+.intro-display p{
+  text-align: center;
+  font-weight: bold;
+}
+.intro-display .img{
+  background-image: url("src/images/git.png");
+  width: 70%;
+  height: 33px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+.intro-display ol{
+  text-align: justify;
+}
+.intro-display a button{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bolder;
+  padding: 0 3px;
+  width: 100px;
+  color: #000;
+  background-color: #77E4C8;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.intro-display a button span div{
+  background-image: url("src/images/arrow.png");
+  width: 20px;
+  height: 10px;
+  margin: 10px 0 10px 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+.sub-intro .intro-details{
+  flex-basis: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.intro-details h1{
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.intro-details h1 span{
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #77E4C8;
+}
+.intro-details h3{
+  font-weight: 700;
+}
+.intro-details h4{
+  font-weight: 300;
+  text-align: left;
+  font-size: 13px;
+}
+/* .sub-intro .intro-img{
+  flex-basis: 100px;
+  height: 170px;
+  margin: 10px auto;
+  background-image: url("src/images/portfolio-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #77E4C8;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+} */
+
+.home-content .about{
+  width: 100%;
+  padding: 10px 0 30px 0 ;
+  border-bottom: 0.5px solid #77E4C8;
+}
+.about a .name{
+  width: 100px;
+  height: 20px;
+  padding: 10px;
+  line-height: 20px;
+  background-color: #77E4C8;
+  color: #000;
+  font-family: "Playwrite HR", cursive;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px 0  0 20px;
+}
+.about .content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+.about .content p{
+  flex-basis: 260px;
+  margin: 20px auto;
+  height: 150px;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #77E4C8;
+  border-radius: 10px;
+  justify-content: justify;
+  background-color: #1a19198c;
+
+}
+.about .content .img{
+  margin: 10px auto;
+  flex-basis: 150px;
+  height: 200px;
+  background-image: url(https://factorialhr.co.uk/wp-content/uploads/2020/09/16173210/laws-on-working-from-home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.home-content .skills{
+  width: 100%;
+}
+.skills h3{
+  text-align: center;
+  font-family: "Playwrite HR", cursive;
+}
+.skills-img{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.skills-img .html{
+  flex-basis: 90px;
+  height: 90px;
+  background-image: url(https://www.cnet.com/a/img/resize/b9b09bd80b3129a6a5da79d9bd17487b977c9677/hub/2014/10/27/40194e6e-2544-419e-a340-f7c17b2e83c5/html5-wow-image-w3c.jpg?auto=webp&width=768);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+.skills-img .js{
+  flex-basis: 90px;
+  height: 90px;
+  background-image: url(https://media.licdn.com/dms/image/D4D12AQG_n3d55-aHXw/article-cover_image-shrink_720_1280/0/1685386362907?e=2147483647&v=beta&t=rC76c77LIUZo5NKB2xgo5ElXwxdz97mGdg84Ch8UewY);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+.skills-img .css{
+  flex-basis: 90px;
+  height: 90px;
+  background-image: url(https://delta-dev-software.fr/wp-content/uploads/2024/05/CSS-Logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+.skills-img .react{
+  flex-basis: 90px;
+  height: 90px;
+  background-image: url(https://miro.medium.com/v2/resize:fit:522/0*Hdm7hBTZ-hKlbtlV.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+.skills-img .tailwind{
+  flex-basis: 90px;
+  height: 90px;
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*_6ooq0R60ba3UT5c-QVemA.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+.skills-img .responsive{
+  flex-basis: 90px;
+  height: 90px;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/020/816/324/original/responsive-icon-for-your-website-mobile-presentation-and-logo-design-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+/* footer */
+.footer{
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-top: 0.5px solid #77E4C8;
+  padding: 30px 10px 0 10px;
+  
+}
+.footer h1{
+  padding: 0 0 6px 20px;
+}
+.footer p{
+  color: #77E4C8;
+  font-weight: bold;
+  padding:0 0 5px 20px;
+}
+.footer .link, .a-link{
+  display: flex;
+  flex-flow: row wrap;
+  margin:  0 15px;
+}
+.footer .link a {
+  flex-basis: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 2px 15px 20px 15px;
+}
+.footer .link .linkdin{
+  width: 100%;
+  height: 20px;
+  background-image: url(https://cdn.icon-icons.com/icons2/1826/PNG/512/4202085linkedinlogosocialsocialmedia-115603_115698.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.footer .link .github{
+  width: 100%;
+  height: 20px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNdKSmb4TvaTpyPELqP7Ei2eb3LnWFD_rbw&s);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media screen and (min-width:500px){
+
+  .sub-intro .intro-display{
+    flex-basis: 10%;
+  }
+  .sub-intro .intro-details{
+    padding: 40px 0 0 0;
+    flex-basis: 40%;
+  }
+  .intro-details h1{
+    font-size: 20px;
+  }
+  .intro-details h1 span{
+    font-size: 20px;
+  }
+  .intro-details h4{
+    font-size: 16px;
+  }
+ .sub-intro .intro-img{
+  flex-basis: 18%;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url("src/images/portfolio-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #77E4C8;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+} 
+
+
+.about a .name{
+  position: absolute;
+  margin-top: 100px;
+  height: 10px;
+  padding: 10px;
+  line-height: 10px;
+}
+.about .content{
+  width: 97%;
+}
+.about .content p{
+  flex-basis: 350px;
+  margin: 150px 0 0 15px;
+  height: 150px;
+  padding: 20px;
+}
+.about .content .img{
+  margin: 10px 10px;
+  flex-basis: 350px;
+  height: 500px;
+  background-image: url(https://factorialhr.co.uk/wp-content/uploads/2020/09/16173210/laws-on-working-from-home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #77E4C8;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.home-content .skills{
+  width: 100%;
+  padding: 30px 0;
+}
+
+.skills-img{
+  padding: 20px;
+}
+.skills-img .html{
+  flex-basis: 220px;
+  height: 220px;
+  background-size: cover;
+}
+.skills-img .js{
+  flex-basis: 220px;
+  height: 220px;
+  background-size: contain;
+}
+.skills-img .css{
+  flex-basis: 220px;
+  height: 220px;
+  background-size: contain;
+}
+.skills-img .react{
+  flex-basis: 220px;
+  height: 220px;
+  background-size: contain;
+}
+.skills-img .tailwind{
+  flex-basis: 220px;
+  height: 220px;
+}
+.skills-img .responsive{
+  flex-basis: 220px;
+  height: 220px;
+}
+}

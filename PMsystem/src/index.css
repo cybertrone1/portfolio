@@ -73,10 +73,10 @@
 }
 
 .Lpage .intro{
-  width: 80%;
+  width: 90%;
   height: 40vh;
   text-align: center;
-  margin: 70px auto;
+  margin: 10px auto;
 }
 .intro h1{
   font-size: 20px;
@@ -86,7 +86,7 @@
 .intro p{
   font-size: 20px;
   font-weight: bolder;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   font-family: "Playwrite HR", cursive;
 }
 .intro button{
@@ -97,4 +97,40 @@
   background-color: #FFF078;
   color: #000;
   font-weight: bold;
+}
+
+.homeContent .logIn{
+  width: 60%;
+  height: 30vh;
+  margin: auto;
+  padding-top: 30%;
+}
+.logIn input{
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  padding: 8px;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.logIn label{
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.logIn p{
+  color: #fff;
+  margin-top: 10px;
+}
+.logIn button{
+  padding: 6px 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-weight: bolder;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 /* child component 1a */
 const Advert = () => {
@@ -57,7 +58,7 @@ const LogIn = ( {userName, setUserName, password, setPassword, message, handleSu
     return(
         <div className="logIn">
             <form onSubmit={handleSubmit}>
-                <label htmlFor="useername">username</label> <br />
+                <label htmlFor="username">username</label> <br />
                 <input type="text"
                     required
                     value={userName}
@@ -85,6 +86,7 @@ const Home = () => {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    const navigate = useNavigate();
 
     const handleButton = (e) => {
         e.preventDefault();
@@ -106,6 +108,11 @@ const Home = () => {
             const data = await response.json();
             if(response.ok){
                 alert(data.message);
+
+                setTimeout(() => { 
+                    navigate("/data");
+                }, 3000);
+
             }else{
                 setMessage("enter correct details")
             }
