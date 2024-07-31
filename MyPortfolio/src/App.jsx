@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Footer from './Footer';
+import About from './About';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <div className="sub-content">
           <Routes>
             <Route exact path='/' element={ < Home /> } />
-
+            <Route exact path='/about' element={ < About /> } />
           </Routes>
         </div>
         < Footer />

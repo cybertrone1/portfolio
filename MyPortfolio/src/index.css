@@ -242,7 +242,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fff;
-  background-size: cover;
+  background-size: contain;
   border-radius: 10px;
   margin: 10px;
 }
@@ -253,7 +253,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fff;
-  background-size: cover;
+  background-size: contain;
   border-radius: 10px;
   margin: 10px;
 }
@@ -264,7 +264,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fff;
-  background-size: cover;
+  background-size: contain;
   border-radius: 10px;
   margin: 10px;
 }
@@ -291,6 +291,40 @@
   margin: 10px;
 }
 
+/* about */
+
+.abouts{
+  width: 100%;
+}
+.abouts h1{
+  width: 70px;
+  padding: 0 10px;
+  font-family: "Playwrite HR", cursive;
+  font-weight: bold;
+  border-bottom: 0.5px solid #77E4C8;
+  margin: 10px 0  0 20px;
+}
+.abouts .about-details{
+  width: 97%;
+  margin: 5px auto;
+}
+.about-details .div1{
+  border-bottom: 0.5px solid #77E4C8;
+}
+.about-details div{
+  padding: 10px 0;
+  text-align: start;
+
+}
+.about-details div h2, span{
+  color: #77E4C8;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.about-details div p{
+  line-height: 2.0;
+}
 
 /* footer */
 .footer{
@@ -302,27 +336,27 @@
   flex-flow: row wrap;
   justify-content: space-between;
   border-top: 0.5px solid #77E4C8;
-  padding: 30px 10px 0 10px;
+  padding: 30px 0;
   
 }
 .footer h1{
-  padding: 0 0 6px 20px;
+  padding: 0 0 6px 10px;
 }
 .footer p{
   color: #77E4C8;
   font-weight: bold;
-  padding:0 0 5px 20px;
+  padding:0 0 5px 10px;
 }
 .footer .link, .a-link{
   display: flex;
   flex-flow: row wrap;
-  margin:  0 15px;
+  margin:  0 5px;
 }
 .footer .link a {
   flex-basis: 20px;
   height: 20px;
   border-radius: 10px;
-  margin: 2px 15px 20px 15px;
+  margin: 2px 15px 10px 15px;
 }
 .footer .link .linkdin{
   width: 100%;
